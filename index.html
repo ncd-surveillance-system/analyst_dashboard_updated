@@ -470,7 +470,7 @@
           </li>
           <li class="nav-item"></li>
               <a class="nav-link" href="#bmi">
-                <i class="ni ni-circle-08"></i>Based on BMI
+                <i class="ni ni-circle-08"></i>Based on bmi
               </a>
             </li>
             <li class="nav-item">
@@ -580,20 +580,12 @@
         <div id="bmi">
             <!-- <div id="chart_div" style=" height: 100vh;margin-left: 500px;margin-top:200px"></div> -->
             <img src="./diabetes.png" style=" height: 80vh;margin-left: 350px;margin-top:100px">
-            <br/><br/><br/><br/><br/><br/>
         </div>
         
         <div id="demography">
-            <div style="margin-left:1000px;align:top">
-                <p style="color:green;font-size: 20px">Non-Diabetic</p>
-                <p style="color:red;font-size: 20px">Diabetic</p>
-            </div>
+            <p style="color:red;margin-left:900px;margin-top:100px;font-size: 24px;">Diabetic</p>
+            <p style="color:green;margin-left:900px;margin-top:px;font-size:24px">Non-Diabetic</p>
             <div id="chartContainer" style="height: 100vh;margin-left: 500px;margin-top:00px;height: 80vh;margin-bottom: 100px"></div><br><br>
-            <div style="margin-left:750px;margin-top:-150px">
-                <p>--------------------></p>
-                <p>Number of people</p>
-            </div>
-            
             
         </div>
        
@@ -609,7 +601,6 @@
     <!-- <div class="row">
         <div id="chart_div" style="width: 900px; height: 500px;"></div>
     </div>
-
     <div class="row">
         <div class="row">
             <div id="chartContainer" style="height: 300px; width: 100%;"></div>
@@ -630,7 +621,6 @@
         else if(x=="bmi")
         {
           console.log("BMI selected")
-
         }
         else if(x=="demography")
         {
@@ -659,12 +649,11 @@
     
   ]);
   
-    var options = {'title':'Medication for hypertension v/s Diabetes', 'width':1000, 'height':800};
+    var options = {'title':'Medication for hypertension v/s Diabetes', 'width':1100, 'height':800};
   
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
     chart.draw(data, options);
-  }<p>----------></p>
-            <p>Number of people</p>
+  }
   </script>
 
 
@@ -679,7 +668,6 @@
       <script type="text/javascript">
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawChart);
-
         function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['BMI', 'Diabetes'],
@@ -690,16 +678,13 @@
           [ 3,      3.5],
           [ 6.5,    7]
         ]);
-
         var options = {
           title: 'Age vs. Weight comparison',
           hAxis: {title: 'BMI', minValue: 0, maxValue: 50},
           vAxis: {title: 'HbA1c Value', minValue: 0, maxValue: 15},
           legend: 'none'
     };
-
     var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
-
     chart.draw(data, options);
   }
 </script>
@@ -741,7 +726,6 @@
     });
    
     
-
 chart.render();
 }
 </script>
